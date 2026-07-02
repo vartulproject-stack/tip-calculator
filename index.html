@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 11/100 - Tip Calculator | Vartul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Tip Calculator</h1>
+        <p class="day">Day 11/100 - Dubai 11% 🇦🇪</p>
+        
+        <div class="input-group">
+            <label>Bill Amount ₹</label>
+            <input type="number" id="bill" placeholder="1000">
+        </div>
+
+        <div class="input-group">
+            <label>Tip % </label>
+            <select id="tip">
+                <option value="0">0% - No Tip</option>
+                <option value="5">5% - Theek hai</option>
+                <option value="10" selected>10% - Good</option>
+                <option value="15">15% - Badiya</option>
+                <option value="20">20% - King 👑</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>People</label>
+            <input type="number" id="people" value="1" min="1">
+        </div>
+
+        <button onclick="calculate()">Calculate Bhai</button>
+
+        <div class="result">
+            <p>Tip Amount: ₹<span id="tipAmount">0</span></p>
+            <p>Total Bill: ₹<span id="totalBill">0</span></p>
+            <p>Per Person: ₹<span id="perPerson">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
